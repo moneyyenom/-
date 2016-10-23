@@ -1,0 +1,26 @@
+1.通过继承Thread，重写run方法创建线程
+  class MyThread extends Thread{
+    public void run(){
+
+    }
+  }
+启动线程：
+  创建出MyThread的实例，调用start()方法
+  new MyThread().strat();
+
+2.创建类实现Runnable接口
+  class MyThread implements Runnable{
+    public void run(){
+
+    }
+  }
+启动线程：
+  MyThread myThread=new MyThread();
+  new Thread(myThread).start();
+
+3.使用匿名类的方法
+  new Thread(new Runnable(){
+    public void run(){
+    
+    }
+  }).start;
